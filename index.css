@@ -76,11 +76,29 @@ body{
     background-color: #F0F0F0;
   }
   .search > button{
-    width: 70px;
+    width: 50px;
     border: 1px solid grey;
+    font-size:15px;
   } 
   .search > button>i{
     font-size: 25px;
+    padding-right: 5px;
+  }
+
+  /* filter*/
+  .filter{
+    display: flex;
+    justify-content: left; 
+    padding-left: 40px;
+  }
+
+  .filter button{
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    background-color: #ff5200;
+    color:white;
+    border-style: none;
   }
 
   /* cards*/
@@ -90,7 +108,12 @@ body{
     margin: 9px;
     text-align: left;
     filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 8px); 
-    
+    background-color:#d4d4d4;
+    border-radius: 16px; 
+  }
+
+  .res-card:hover {
+    transform: scale(0.92);
   }
   
   .res-container {
@@ -111,16 +134,15 @@ body{
     left:0%;
     /* /transform: translate(-50%, -50%); */
     color: #fff;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     text-transform: uppercase;
     background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
     width:100%;
-    padding-left: 5px;
-    padding-bottom:5px;
-    padding-right:12px;
+    padding-left: 2px;
+    padding-bottom:5px; 
     box-sizing: border-box;
-    border-radius: 16px; 
+    /* border-radius: 16px;  */
   }
 
   .res-container i {
@@ -144,10 +166,10 @@ body{
   .footer{
     display: flex;
     text-align: center;
-    height: 50px;
+    height: 30px;
     justify-content: center;
     /* border-top: 1px solid rgb(172, 169, 169); */
-    padding: 10px;
+    padding: 50px;
     background-color: rgb(240, 240, 245);
-    padding:40px;
+    color:#3d4152;
   }

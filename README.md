@@ -112,6 +112,27 @@ import { Title } from "./components/Title";
 ----------------------
 #props : properties
 
+#Hooks: utility React functions
+Hooks
+React has utility functions -> normal js functions -> facebook developers
+these functions has some superpowers
+
+useState - 80%
+
+useEffect - 15%
+
+Other - 5%
+
+let [restaurants, setRestaurants] = useState([])
+
+state variable
+
+special fun - through which i can modify / reassign my state variable
+
+this is necessary because if you dont do this and assign your variable then it will be a normal one and it does not have any effect on the UI / DOM
+setRestaurants(newVal) => your component rerendered with new value that is why UI is rendering again
+
+
 
 
 ======== PLAN for food-order-app project ========
