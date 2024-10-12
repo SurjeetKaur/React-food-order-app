@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'  // useEffect and useState are (hooks)functions 
 import RestaurantCard from './RestaurantCard'
 import { DATA_RESTAURANTS } from '../utils/Constants'
+import ShimmerUi from './ShimmerUi'
 
 //api
 // https://www.swiggy.com/mapi/homepage/getCards?lat=17.3573882&lng=78.5112407
@@ -59,43 +60,46 @@ import { DATA_RESTAURANTS } from '../utils/Constants'
 
 function Body() {
   useEffect(() => {
-      console.log("component is re rendered")
+      //console.log("component is re rendered")
       fetchData()
   }, [])
   // normal js variable
   // let filteredList = DATA_RESTAURANTS;
 
-  let [restaurants, setRestaurants] = useState([])
+  let [restaurants, setRestaurants] = useState([]) //restaurants is a state variable
+
   // const resList = null
 
   const fetchData = async () => {
       const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.3573882&lng=78.5112407&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         //"https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.0044745&lng=72.55311549999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+        
       const json = await data.json()
-      const resData = json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
+      //console.log( 'data of api',data)
+      const resData = json.data.cards[1].card.card.gridElements?.infoWithStyle.restaurants
       setRestaurants(resData)
   }
+ return (restaurants.length==0? <ShimmerUi />:
 
-
-  return (
+  //return (
       <div className='body'>
         <div className="search">
           <input type="text" placeholder="Search for restaurant and food" id="search-text"/>
           <button onClick={() => {
             const searchValue = document.getElementById("search-text").value.toLowerCase(); 
-            let filteredList = restaurants.filter((restaurant) => {
+            let filteredResItems = restaurants.filter((restaurant) => {
               const restaurantName = restaurant.info.name.toLowerCase().replace(/[^\w]/g, '').trim(); // remove non-word characters and trim whitespace
               const cuisines = restaurant.info.cuisines.join(',').toLowerCase().replace(/[^\w]/g, '').trim(); // remove non-word characters and trim whitespace
               return restaurantName.includes(searchValue) || cuisines.includes(searchValue); 
             });
-            if (filteredList.length === 0) {
+            if (filteredResItems.length === 0) {
               setRestaurants([]); // clear the restaurants array
-              // alert(`Restaurant or food not found: ${searchValue}`); // display an alert message
+              alert('No restaurant or food found matching your search criteria');
             } else {
-              setRestaurants(filteredList); 
+              setRestaurants(filteredResItems); 
             }
             
-            console.log("after search restaurnts", restaurants)
+            console.log("after search restaurants", restaurants)
           }}
           ><i className=" fa fa-search"></i>
           </button>
@@ -110,7 +114,7 @@ function Body() {
 
                   //restaurants = filteredList
                   setRestaurants(filteredList)
-                  console.log("after filter restaurnts", restaurants)
+                  console.log("after filter restaurants", restaurants)
               }} >
                 Top Rated Restaurants ➡️
               </button>
@@ -119,10 +123,9 @@ function Body() {
               {/* <RestaurantCard name="Baskins" cuisines="Ice Cream, Desserts" deliveryTime="15-20 minutes" ratings="4.3 ⭐" />
               <RestaurantCard name="Honest" cuisines="North Indian" deliveryTime="10-15 minutes" ratings="2.3 ⭐" />
               <RestaurantCard name="Sankalp" cuisines="North Indian" deliveryTime="5-15 minutes" ratings="4.7 ⭐" />
-               */}
-
-              {
-                restaurants && restaurants.length > 0 ?
+               */
+                
+                  //restaurants && restaurants.length> 0 ?
                   restaurants && restaurants.map((restaurant, index) => {
                       return <RestaurantCard
                           key={index}
@@ -138,11 +141,10 @@ function Body() {
                           
                      />
                   })
-                  :
-                  <div>No restaurant or food found matching your search criteria.</div>
-                  
-                
-                }
+                //   //:
+                //   <div id="alert-message">No restaurants or food found matching your search criteria.</div>  
+                //   //<div id="alert-message">No restaurants found</div>
+                } 
           </div>
       </div>
   )
