@@ -1,6 +1,27 @@
 import React from 'react'
 import { RES_IMG_URL} from '../utils/Constants' //to access one out of multiple components from one page use {}
 
+
+// third VERSION OF FUNCTION RestaurantCard  using map  #dynamic
+
+function RestaurantCard({ name,discountHeader,discountSubHeader,discountTag ,cuisines, ratings, deliveryTime,areaName, cloudinaryId,}) {
+    return (
+        <div className='res-card'>
+            <img className='res-logo' src={`${RES_IMG_URL}${cloudinaryId}`} alt="res-logo" />
+            <span className="res-text">{discountHeader} {discountSubHeader} {discountTag}</span>
+            <div className="res-description">
+                <h3>{name}</h3><br></br>
+                <h3><i className="fa fa-star"></i>{ratings} •{deliveryTime}</h3>
+                <p>{cuisines}</p> 
+                <p className="area-uppercase"><strong><i className=" fas fa-map-pin"></i>{areaName}</strong></p>
+            </div>
+        </div>
+    )
+}
+export default RestaurantCard
+
+
+
 //FIRST VERSION OF FUNCTION RestaurantCard() #static
 
 // function RestaurantCard() {
@@ -45,20 +66,3 @@ import { RES_IMG_URL} from '../utils/Constants' //to access one out of multiple 
 //     }
 
 
-
-
-// third VERSION OF FUNCTION RestaurantCard  using map  #dynamic
-
-function RestaurantCard({ name,discountHeader,discountSubHeader,discountTag ,cuisines, ratings, deliveryTime,areaName, cloudinaryId,}) {
-    return (
-        <div className='res-card'>
-            <img className='res-logo' src={`${RES_IMG_URL}${cloudinaryId}`} alt="res-logo" />
-            <span className="res-text">{discountHeader} {discountSubHeader} {discountTag}</span>
-            <h3>{name}</h3><br></br>
-            <h3><i className="fa fa-star"></i>{ratings} •{deliveryTime}</h3>
-            <p>{cuisines}</p> 
-            <p className="area-uppercase"><strong><i className=" fas fa-map-pin"></i>{areaName}</strong></p>
-        </div>
-    )
-}
-export default RestaurantCard

@@ -3,7 +3,7 @@
 export const LOGO_IMG="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_800,h_800/portal/c/logo_2022.jpeg"
 
 // image used for static restaurant cards
-// export const TEMP_RES_LOGO = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/7368ed44662f4da5852b1c883f60a08e"
+export const TEMP_RES_LOGO = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/7368ed44662f4da5852b1c883f60a08e"
 
 // url of  images of restaurants for dynamic rendering
 export const RES_IMG_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
@@ -1343,7 +1343,450 @@ export const  DATA_RESTAURANTS=[
                                         "type": "DEEPLINK"
                                     }
                                 }
-                            ]
+                            ];
 
                             
                     
+export const GRID_DATA=[
+                                          {
+                                            "id": "750591",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Biryani.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/83639?collection_id=83639&search_context=biryani&tags=layout_CCS_Biryani&type=rcv2",
+                                              "text": "Biryani",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurants curated for biryani",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=83639&tags=layout_CCS_Biryani&search_context=biryani",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Biryani"
+                                          },
+                                          {
+                                            "id": "750248",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_shawarma.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/80402?collection_id=80402&tags=layout_Shawarma_Contextual&type=rcv2",
+                                              "text": "Shawarma",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurant curated for shawarma",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=80402&tags=layout_Shawarma_Contextual",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Shawarma"
+                                          },
+                                          {
+                                            "id": "750589",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_burger.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/83637?collection_id=83637&search_context=burger&tags=layout_CCS_Burger&type=rcv2",
+                                              "text": "Burgers",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurants curated for burger",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=83637&tags=layout_CCS_Burger&search_context=burger",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Burgers"
+                                          },
+                                          {
+                                            "id": "750579",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Pizzas.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/83631?collection_id=83631&search_context=pizza&tags=layout_CCS_Pizza&type=rcv2",
+                                              "text": "Pizzas",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurants curated for pizza",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=83631&tags=layout_CCS_Pizza&search_context=pizza",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Pizzas"
+                                          },
+                                          {
+                                            "id": "750596",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_chocolate icecream.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/83640?collection_id=83640&tags=layout_CCS_IceCreams&type=rcv2",
+                                              "text": "Ice Cream",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurants curated for icecream",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=83640&tags=layout_CCS_IceCreams",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Ice Cream"
+                                          },
+                                          {
+                                            "id": "750587",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Chinese.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/83636?collection_id=83636&tags=layout_CCS_Chinese&type=rcv2",
+                                              "text": "Chinese",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurant curated for chinese",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=83636&tags=layout_CCS_Chinese",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Chinese"
+                                          },
+                                          {
+                                            "id": "750222",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/17/58760e8e-324f-479e-88fa-31800120ea38_Rolls1.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/83669?collection_id=83669&tags=layout_CCS_Rolls&type=rcv2",
+                                              "text": "Rolls",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurants curated for roll",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=83669&tags=layout_CCS_Rolls",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Rolls"
+                                          },
+                                          {
+                                            "id": "749772",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Noodles.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/80463?collection_id=80463&tags=layout_BAU_Contextual%2Cnoodles&type=rcv2",
+                                              "text": "Noodles",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurant curated for noodles",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "80463",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Noodles"
+                                          },
+                                          {
+                                            "id": "745861",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Shake.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/83673?collection_id=83673&tags=layout_CCS_Shakes&type=rcv2",
+                                              "text": "Shake",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurants curated for shakes",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=83673&tags=layout_CCS_Shakes",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Shake"
+                                          },
+                                          {
+                                            "id": "749768",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Momos.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/80461?collection_id=80461&tags=layout_CCS_Momos&type=rcv2",
+                                              "text": "Momos",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurant curated for momos",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=80461&tags=layout_CCS_Momos",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Momos"
+                                          },
+                                          {
+                                            "id": "749868",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_cake.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/83655?collection_id=83655&tags=layout_CCS_Cake&type=rcv2",
+                                              "text": "Cakes",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurant curated for cake",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=83655&tags=layout_CCS_Cake",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Cakes"
+                                          },
+                                          {
+                                            "id": "750585",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Salad-1.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/83634?collection_id=83634&search_context=southindian&tags=layout_CCS_SouthIndian&type=rcv2",
+                                              "text": "South Indian",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurants curated for south indian",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=83634&tags=layout_CCS_SouthIndian&search_context=southindian",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "South Indian"
+                                          },
+                                          {
+                                            "id": "750635",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Kebabs.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/80451?collection_id=80451&tags=layout_CCS_Kebabs&type=rcv2",
+                                              "text": "Kebabs",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurant curated for kebabs",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=80451&tags=layout_CCS_Kebabs",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Kebabs"
+                                          },
+                                          {
+                                            "id": "750234",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Poori.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/80377?collection_id=80377&tags=layout_BAU_Contextual%2Cpoori&type=rcv2",
+                                              "text": "Poori",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurant curated for poori",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "80377",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Poori"
+                                          },
+                                          {
+                                            "id": "750208",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_pastry.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/80355?collection_id=80355&tags=layout_CCS_Pastry&type=rcv2",
+                                              "text": "Pastry",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurant curated for Pastry",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=80355&tags=layout_CCS_Pastry",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Pastry"
+                                          },
+                                          {
+                                            "id": "750581",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_North Indian.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/83633?collection_id=83633&search_context=northindian&tags=layout_CCS_NorthIndian&type=rcv2",
+                                              "text": "North Indian",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurants curated for north indian",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=83633&tags=layout_CCS_NorthIndian&search_context=northindian",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "North Indian"
+                                          },
+                                          {
+                                            "id": "750586",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Gulab jamun.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/80430?collection_id=80430&tags=layout_BAU_Contextual%2Cgulab_jamun&type=rcv2",
+                                              "text": "Gulab Jamun",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurant curated for gulab jamun",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "80430",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Gulab Jamun"
+                                          },
+                                          {
+                                            "id": "750206",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/f1263395-5d4a-4775-95dc-80ab6f3bbd89_pasta.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/80479?collection_id=80479&search_context=pasta&tags=layout_CCS_Pasta&type=rcv2",
+                                              "text": "Pasta",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurant curated for pasta",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=80479&tags=layout_CCS_Pasta&search_context=pasta",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Pasta"
+                                          },
+                                          {
+                                            "id": "750571",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/8f508de7-e0ac-4ba8-b54d-def9db98959e_Pure Veg.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/80435?collection_id=80435&tags=layout_CCS_PureVeg&type=rcv2",
+                                              "text": "Pure Veg",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurants curated for veg",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "swiggy://collectionV2?collection_id=80435&tags=layout_CCS_PureVeg",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Pure Veg"
+                                          },
+                                          {
+                                            "id": "749760",
+                                            "imageId": "MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/2/6ef07bda-b707-48ea-9b14-2594071593d1_Khichdi.png",
+                                            "action": {
+                                              "link": "https://www.swiggy.com/collections/80455?collection_id=80455&tags=layout_BAU_Contextual%2Ckhichdi&type=rcv2",
+                                              "text": "Khichdi",
+                                              "type": "WEBLINK"
+                                            },
+                                            "entityType": "BANNER",
+                                            "accessibility": {
+                                              "altText": "restaurants curated for khichdi",
+                                              "altTextCta": "open"
+                                            },
+                                            "entityId": "80455",
+                                            "frequencyCapping": {
+                          
+                                            },
+                                            "externalMarketing": {
+                          
+                                            },
+                                            "description": "Khichdi"
+                                          }
+                                        ]
+

@@ -133,6 +133,12 @@ this is necessary because if you dont do this and assign your variable then it w
 setRestaurants(newVal) => your component rerendered with new value that is why UI is rendering again
 
 
+## React shimmer effects
+Shimmer effects are used to create a loading animation in a React application. They are used to give the user a visual indication that the data is being loaded.
+ run command on terminal to install shimmer in app:
+ npm i react-shimmer-effects
+
+ 
 
 
 ======== PLAN for food-order-app project ========
