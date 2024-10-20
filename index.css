@@ -67,7 +67,8 @@ body{
     display: flex;
     flex-direction: column;
     border-bottom: 1px rgb(187, 186, 186) solid;
-     overflow:hidden; 
+    /* overflow:hidden;  */
+    /* width:100%; */
   }
   .grid-header{
     display: flex;
@@ -77,26 +78,29 @@ body{
     text-align: left;
     padding: 20px;
   }
- 
-  .grid-slider .slick-next, .my-slider .slick-prev {
-    font-size: 20px;
-    color: #333;
+  
+  .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px !important;
+    line-height: 1;
+    opacity: .75 !important;
+    color: #ff5200 !important;
   }
   
+  
   .res-special-items {
-    width: 100%;
+    width:90%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+    flex-wrap:wrap;
+    justify-content: space-around;
+     margin-left:50px; 
   }
   
   .special-item-card{
      text-align: center;
-      margin:10px 40px;
-        
-  }
+     
+  } 
 
 
 .grid-img{
@@ -258,3 +262,26 @@ body{
     background-color: rgb(240, 240, 245);
     color:#3d4152;
   }
+
+
+  /* errorHandling design */
+  .error-container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .error-msg{
+    margin-top: 150px;
+  }
+  .error-msg span i{
+    font-size:100px;
+    color:#696868;
+  }
+  .error-msg h1{
+    font-size: 40px;
+    font-weight: bold;
+    color:red;
+    padding-top: 20px;
+  }
+
+  

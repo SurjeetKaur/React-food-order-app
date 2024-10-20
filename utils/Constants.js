@@ -8,6 +8,8 @@ export const TEMP_RES_LOGO = "https://media-assets.swiggy.com/swiggy/image/uploa
 // url of  images of restaurants for dynamic rendering
 export const RES_IMG_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
+// API with lon and lat for hyderabad
+export const RES_API_URL="https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.3573882&lng=78.5112407&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 // API OF HYDERABAD  LOCATION(SAIDABAD,HYDERABAD,TELANGANA,500059)
 export const  DATA_RESTAURANTS=[
@@ -1346,7 +1348,7 @@ export const  DATA_RESTAURANTS=[
                             ];
 
                             
-                    
+ // manually used grid data # whats on your mind section                   
 export const GRID_DATA=[
                                           {
                                             "id": "750591",

@@ -138,7 +138,12 @@ Shimmer effects are used to create a loading animation in a React application. T
  run command on terminal to install shimmer in app:
  npm i react-shimmer-effects
 
- 
+ ## useEffect 
+     useEffect would be called after your component renders
+     
+  1) Empty dependency array [] => component loads => useEffect would be called, but only on initial render => 1 time
+  2) Do not mention anything in dependency array => component loads => useEffect called on initial render as well as after every re-render of component
+  3) If you have a variable that is being updated
 
 
 ======== PLAN for food-order-app project ========

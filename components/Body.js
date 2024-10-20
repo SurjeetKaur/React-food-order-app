@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'  // useEffect and useState are (hooks)functions 
 import RestaurantCard from './RestaurantCard'
-import { DATA_RESTAURANTS ,GRID_DATA} from '../utils/Constants'
+import { DATA_RESTAURANTS ,GRID_DATA, RES_API_URL} from '../utils/Constants'
 import ResSpecialItemsCards from './ResSpecialItemsCards'
 import ShimmerUi from './ShimmerUi'
 import Slider from "react-slick";
@@ -14,7 +14,7 @@ function Body() {
   ensuring that the data is retrieved only once during the component's lifecycle.*/}
   
   useEffect(() => {
-      console.log("component is re rendered");
+      //console.log("component is re rendered");
       fetchData();
   }, []);
   
@@ -33,17 +33,18 @@ function Body() {
 
     const fetchData = async () => {
        setShimmerEffect(true); // Show shimmer effect while data is being fetched
-        const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.3573882&lng=78.5112407&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"); // lon and lat for hyderabad
-          //"https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.0044745&lng=72.55311549999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"  
+        const data = await fetch(RES_API_URL);   
         const json = await data.json()
         //console.log( 'data of api',data)
         const resGridData= json.data.cards[0].card.card.imageGridCards?.info
+        //  const resGridData= json.data.cards[0];
         setSpecialItemsData(resGridData);
-        console.log('data special items',resGridData);
+        //console.log('data special items',resGridData);
         setShimmerEffect(false); //hide shimmer effect
+
         const resData = json.data.cards[1].card.card.gridElements?.infoWithStyle.restaurants
         setRestaurants(resData);
-        console.log("restaurant data",resData);
+        //console.log("restaurant data",resData);
         setOriginalResturantsData(resData); //original restaurant's data
         setShimmerEffect(false);// Hide shimmer effect after fetching
     }
@@ -55,7 +56,7 @@ function Body() {
 
         <div className="images-grid-container">
           <div className="grid-header">
-            <h2>What's on your mind?</h2>
+             <h2>What's on your mind?</h2> 
           </div>
           <div className="res-special-items"> 
             {specialItemsData && (
@@ -98,7 +99,7 @@ function Body() {
             />
             <button className="search-btn" onClick={() => {
               if(!searchText){
-                alert('Please enter something to search');
+                //alert('Please enter something to search');
                  // If the search text is empty, reset to original data
                 setRestaurants(originalRestaurantsData);
                 setNoResultsFound(false);
