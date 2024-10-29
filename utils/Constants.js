@@ -1792,3 +1792,269 @@ export const GRID_DATA=[
                                           }
                                         ]
 
+
+
+export const MOCK_RES_MENU=[
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "134617303",
+                "name": "4 Thepla With Sukhi Bhaji",
+                "category": "Snacks",
+                "description": "Delicious and flavorful Indian snack with crispy theplas served alongside a savory and delectable sukhi bhaji.",
+                "imageId": "cc11f701d2d1de0f77b3d13f81282fd7",
+                "isVeg": 1,
+                "price": 15000,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {
+                    "text": "Bestseller",
+                    "textColor": "#ffffff",
+                    "topBackgroundColor": "#d53d4c",
+                    "bottomBackgroundColor": "#b02331"
+                },
+                "type": "ITEM",
+                "itemBadge": {},
+                "badgesV2": {},
+                "isBestseller": true,
+                "ratings": {
+                    "aggregatedRating": {
+                        "rating": "4.1",
+                        "ratingCount": "21 ratings",
+                        "ratingCountV2": "21"
+                    }
+                }
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "109434203",
+                "name": "Thepla (4 Pcs) With Pickle",
+                "category": "Snacks",
+                "description": "Delight in a delectable combination of flavorful Theplas and tangy pickle, a perfect snack to satisfy your cravings.",
+                "isVeg": 1,
+                "price": 5500,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {
+                    "text": "Bestseller",
+                    "textColor": "#ffffff",
+                    "topBackgroundColor": "#d53d4c",
+                    "bottomBackgroundColor": "#b02331"
+                },
+                "type": "ITEM",
+                "itemBadge": {},
+                "badgesV2": {},
+                "isBestseller": true,
+                "ratings": {
+                    "aggregatedRating": {
+                        "rating": "4.1",
+                        "ratingCount": "33 ratings",
+                        "ratingCountV2": "33"
+                    }
+                }
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "47831397",
+                "name": "Maska Bun",
+                "category": "Snacks",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/6/20/d65c2b42-dcc8-4cc3-8f2e-aa6568791e85_70d3fea3-26fb-409f-a56c-b2d4d828e943.JPG",
+                "isVeg": 1,
+                "price": 5500,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {
+                    "text": "Bestseller",
+                    "textColor": "#ffffff",
+                    "topBackgroundColor": "#d53d4c",
+                    "bottomBackgroundColor": "#b02331"
+                },
+                "type": "ITEM",
+                "itemBadge": {},
+                "badgesV2": {},
+                "isBestseller": true,
+                "ratings": {
+                    "aggregatedRating": {
+                        "rating": "3.9",
+                        "ratingCount": "24 ratings",
+                        "ratingCountV2": "24"
+                    }
+                }
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "106451071",
+                "name": "Vegetable Handvo",
+                "category": "Snacks",
+                "imageId": "a96572c10082d464bd103f903ddc30a5",
+                "isVeg": 1,
+                "price": 15000,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "type": "ITEM",
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {
+                        "rating": "4.2",
+                        "ratingCount": "12 ratings",
+                        "ratingCountV2": "12"
+                    }
+                }
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "106451068",
+                "name": "Peri Peri French Fries",
+                "category": "Snacks",
+                "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/8/9/674c6827-66ba-4b6c-a0ef-d6c415cbb88f_e097174f-b965-4996-85e8-b2e22b94e75b.JPG",
+                "isVeg": 1,
+                "price": 16000,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "type": "ITEM",
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {
+                        "rating": "5.0",
+                        "ratingCount": "3 ratings",
+                        "ratingCountV2": "3"
+                    }
+                }
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "147820488",
+                "name": "Thepla With Dahi And Pickle",
+                "category": "Snacks",
+                "description": "A delightful combination of soft theplas served with creamy dahi and tangy pickle.",
+                "isVeg": 1,
+                "price": 10000,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "type": "ITEM",
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {}
+                }
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "106451066",
+                "name": "French Fries",
+                "category": "Snacks",
+                "description": "Salted",
+                "isVeg": 1,
+                "price": 14000,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "type": "ITEM",
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {
+                        "rating": "4.8",
+                        "ratingCount": "8 ratings",
+                        "ratingCountV2": "8"
+                    }
+                }
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    },
+    {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+            "info": {
+                "id": "47831396",
+                "name": "Jam Maska",
+                "category": "Snacks",
+                "isVeg": 1,
+                "price": 6500,
+                "variants": {},
+                "variantsV2": {},
+                "itemAttribute": {
+                    "vegClassifier": "VEG"
+                },
+                "ribbon": {},
+                "type": "ITEM",
+                "itemBadge": {},
+                "badgesV2": {},
+                "ratings": {
+                    "aggregatedRating": {
+                        "rating": "5.0",
+                        "ratingCount": "3 ratings",
+                        "ratingCountV2": "3"
+                    }
+                }
+            },
+            "analytics": {},
+            "hideRestaurantDetails": true
+        }
+    }
+]

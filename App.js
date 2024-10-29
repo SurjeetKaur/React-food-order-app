@@ -6,6 +6,7 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import Corporate from "./components/Corporate";
 import ErrorHandling from "./components/ErrorHandling";
+import RestaurantMenu from "./components/RestaurantMenu";
 
 // applayout component contains static and dynamic pages
 const AppLayout = () => {
@@ -37,7 +38,11 @@ const appRouter = createBrowserRouter([
             // {
             //     path: "contact",
             //     element: <Contact />
-            // }
+            // },
+            {
+                path: "restaurantMenu",
+                element: <RestaurantMenu />
+            }
         ]
     }
 ]);

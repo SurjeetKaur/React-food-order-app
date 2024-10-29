@@ -7,7 +7,7 @@ import { RES_IMG_URL} from '../utils/Constants' //to access one out of multiple 
 function RestaurantCard({ name,discountHeader,discountSubHeader,discountTag ,cuisines, ratings, deliveryTime,areaName, cloudinaryId,}) {
     return (
         <div className='res-card'>
-            <img className='res-logo' src={`${RES_IMG_URL}${cloudinaryId}`} alt="res-logo" />
+            <img className='res-logo' src={`${RES_IMG_URL}${cloudinaryId}`} alt="restaurant image" />
             <span className="res-text">{discountHeader} {discountSubHeader} {discountTag}</span>
             <div className="res-description">
                 <h3>{name}</h3><br></br>
