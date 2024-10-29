@@ -84,6 +84,18 @@ function Body() {
             )}
           </div>      
         </div>
+        {/* top rated chains */ }
+        <div className='top-rated-res-container'>
+          <h2>Top restaurant chains</h2>
+          <div className="filter-top-res-cards">
+           {/* let filteredList = originalRestaurantsData.filter((restaurant) => {
+                      return restaurant.info.avgRatingString >= 4.0 //filter for top rated restuarants
+                      setRestaurants(filteredList);
+                  }) */}
+          </div>
+
+
+        </div>
             
          {/* section contains restaurants with online food delievery */}
 

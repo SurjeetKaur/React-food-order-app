@@ -12,11 +12,14 @@ const AppLayout = () => {
     return (
         <>
             <Header />
-            <Outlet />
+             <Outlet />    {/*dynamic component */}
             <Footer />
         </>
     )
 }
+
+// routing configuration
+
 const appRouter = createBrowserRouter([
     {
         path: "",

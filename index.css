@@ -44,14 +44,14 @@ body{
     flex-shrink:1;
   }
 
-  .nav-container >ul >li > a{
+  .nav-container >ul >li > .nav-link{
     text-decoration: none;
     color:#3d4152;
     font-size:18px;
     font-weight: 500;
 
   }
-  .nav-container a:hover{
+  .nav-container .nav-link:hover{
     color: #ff5200;
 
   }
@@ -109,6 +109,17 @@ body{
   display: flex;
   margin:0 auto;
 }
+
+/* top-rated-res-container*/
+.top-rated-res-container{
+  display: flex;
+  height: 200px;
+}
+.top-rated-res-container h2{
+  padding:20px;
+}
+
+
 
 
   /* search-bar */
