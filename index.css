@@ -2,8 +2,14 @@
     margin:0;
     padding:0;
 } 
+
 body{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+  color: black;
+  text-decoration: none; 
 }
 
  /*header*/
@@ -296,5 +302,58 @@ body{
     color:red;
     padding-top: 20px;
   }
+
+  /* RestaurantMenu.js*/
+
+.res-menu-container{
+ display:flex;
+ flex-direction: column;
+}
+.res-menu-container h2{
+  text-align:left;
+  padding:20px;
+}
+
+.menu-list{
+  display: flex;
+
+  
+}
+ .menu-list li{
+  list-style: none;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  text-align:left;
+  color:#ff5200;
+  border-right:none !important;
+  
+ }
+.item-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom:2px solid #dadad9; 
+  margin-bottom: 20px;  
+
+}
+ .menu-description{
+  margin-bottom: 50px;
+  flex-basis: 70%;
+  padding-top:10px;
+ }
+ .menu-image{
+  display:flex;
+  flex-basis:30%;
+  justify-content: flex-end; 
+  align-items: right; 
+ }
+
+ .res-img{
+  border-radius: 20px;
+  height: 160px;
+  width: 160px;
+  margin-bottom:15px !important;
+  
+ }
 
   

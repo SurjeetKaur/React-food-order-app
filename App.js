@@ -36,11 +36,11 @@ const appRouter = createBrowserRouter([
                 element: <Corporate />
             },
             // {
-            //     path: "contact",
-            //     element: <Contact />
+            //     path: "help",
+            //     element: <Help />
             // },
             {
-                path: "restaurantMenu",
+                path: "restaurantMenu/:restaurantId",
                 element: <RestaurantMenu />
             }
         ]

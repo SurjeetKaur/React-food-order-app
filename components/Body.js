@@ -1,4 +1,5 @@
-import React,{useEffect,useState} from 'react'  // useEffect and useState are (hooks)functions 
+import React,{useEffect,useState} from 'react' 
+import {Link} from "react-router-dom"; // useEffect and useState are (hooks)functions 
 import RestaurantCard from './RestaurantCard'
 import { DATA_RESTAURANTS ,GRID_DATA, RES_API_URL} from '../utils/Constants'
 import ResSpecialItemsCards from './ResSpecialItemsCards'
@@ -6,6 +7,7 @@ import ShimmerUi from './ShimmerUi'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 
 
 
@@ -35,16 +37,19 @@ function Body() {
        setShimmerEffect(true); // Show shimmer effect while data is being fetched
         const data = await fetch(RES_API_URL);   
         const json = await data.json()
-        //console.log( 'data of api',data)
-        const resGridData= json.data.cards[0].card.card.imageGridCards?.info
+        console.log( 'data of api',data)
+
+        const resGridData= json?.data?.cards[0]?.card?.card?.imageGridCards?.info 
         //  const resGridData= json.data.cards[0];
         setSpecialItemsData(resGridData);
-        //console.log('data special items',resGridData);
+      
         setShimmerEffect(false); //hide shimmer effect
 
-        const resData = json.data.cards[1].card.card.gridElements?.infoWithStyle.restaurants
+        const resData = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants? json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants:
+        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants? json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants:
+        DATA_RESTAURANTS;
         setRestaurants(resData);
-        //console.log("restaurant data",resData);
+        console.log( "resData",resData);
         setOriginalResturantsData(resData); //original restaurant's data
         setShimmerEffect(false);// Hide shimmer effect after fetching
     }
@@ -143,7 +148,7 @@ function Body() {
                   })
                   //console.log("filteredList", filteredList)
                   setRestaurants(filteredList) // Update the restaurants state with filtered results
-                  console.log("after filter restaurants", restaurants)
+                  //console.log("after filter restaurants", restaurants)
                 }} >
                 Top Rated Restaurants ➡️
               </button>
@@ -155,18 +160,21 @@ function Body() {
               {
                 noResultsFound ? ( <div id="alert-message">No restaurants or food found matching your search criteria !</div>):(
                 restaurants && restaurants.map((restaurant, index) => {
-                  return <RestaurantCard
-                      key={index}
-                      cloudinaryId={restaurant.info.cloudinaryImageId} 
-                      name={restaurant.info.name}
-                      deliveryTime={restaurant.info.sla.slaString}
-                      ratings={`${restaurant.info.avgRatingString}`}
-                      cuisines={restaurant.info.cuisines?.join(", ")} // join() is used to combine elements into a string. When working with objects, extract the property values to make them strings.
-                      areaName={restaurant.info.areaName}
-                      discountHeader={restaurant.info.aggregatedDiscountInfoV3?.header} 
-                      discountSubHeader={restaurant.info.aggregatedDiscountInfoV3?.subHeader}
-                      discountTag={restaurant.info.aggregatedDiscountInfoV3?.discountTag}
-                    />
+                  return (
+                  <Link to={"/restaurantmenu/" + restaurant.info.id}>
+                     <RestaurantCard
+                        key={index}
+                        cloudinaryId={restaurant.info.cloudinaryImageId} 
+                        name={restaurant.info.name}
+                        deliveryTime={restaurant.info.sla.slaString}
+                        ratings={`${restaurant.info.avgRatingString}`}
+                        cuisines={restaurant.info.cuisines?.join(", ")} // join() is used to combine elements into a string. When working with objects, extract the property values to make them strings.
+                        areaName={restaurant.info.areaName}
+                        discountHeader={restaurant.info.aggregatedDiscountInfoV3?.header} 
+                        discountSubHeader={restaurant.info.aggregatedDiscountInfoV3?.subHeader}
+                        discountTag={restaurant.info.aggregatedDiscountInfoV3?.discountTag}
+                      />
+                  </Link>  ) 
                   })
                 )} 
             </div>

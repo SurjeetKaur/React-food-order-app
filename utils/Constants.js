@@ -11,7 +11,14 @@ export const RES_IMG_URL = "https://media-assets.swiggy.com/swiggy/image/upload/
 // API with lon and lat for hyderabad
 export const RES_API_URL="https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.3573882&lng=78.5112407&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
-// API OF HYDERABAD  LOCATION(SAIDABAD,HYDERABAD,TELANGANA,500059)
+//API for restaurantmenu to render data dynamically
+export const RES_MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.3573882&lng=78.5112407&restaurantId=";
+
+// RESTAURANT MENU IMAGES
+export const MENU_IMAGE= "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/"; 
+
+
+// manual api data OF HYDERABAD  LOCATION(SAIDABAD,HYDERABAD,TELANGANA,500059)
 export const  DATA_RESTAURANTS=[
                                 {
                                     "info": {
@@ -1348,7 +1355,7 @@ export const  DATA_RESTAURANTS=[
                             ];
 
                             
- // manually used grid data # whats on your mind section                   
+ // manually used grid data  # what's on your mind section                   
 export const GRID_DATA=[
                                           {
                                             "id": "750591",
@@ -1793,7 +1800,7 @@ export const GRID_DATA=[
                                         ]
 
 
-
+// manual data for RestaurantMenu
 export const MOCK_RES_MENU=[
     {
         "card": {
@@ -2058,3 +2065,6 @@ export const MOCK_RES_MENU=[
         }
     }
 ]
+
+
+
