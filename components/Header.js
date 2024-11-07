@@ -1,9 +1,14 @@
 import React from 'react'
+import { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
 import {LOGO_IMG } from "../utils/Constants"; //By using curly braces {LOGO_IMG},JavaScript  import only the LOGO_IMG constant from imagesConstants file
 
 
 const Header = () => {
+    const [btnText, setBtnText] = useState("Sign In");
+    useEffect(() => {
+        console.log("header useEffect is called");
+    }, [])
     return (
         <div className="header">
             <div className="logo-container">
@@ -23,7 +28,20 @@ const Header = () => {
                     <li><Link to="/search" className='nav-link'><i className="fa fa-search"></i>Search</Link></li>
                     <li><Link to="/offers" className='nav-link'><i className="fa fa-gift"></i>Offers</Link></li>
                     <li><Link to="/help" className='nav-link'><i className="fa fa-question-circle"></i>Help</Link></li>
-                    <li><Link to="/signin" className='nav-link'><i className="fa fa-user"></i>Sign In</Link></li>
+                    <li>
+                        <Link to='/#' className='nav-link' onClick={()=>{
+                                btnText=== "Sign In" ? setBtnText("Sign Out"): setBtnText("Sign In")
+                                }}> 
+                                <i className="fa fa-user"></i> 
+                       
+                            {/* <button onClick={()=>{
+                                btnText=== "Sign In" ? setBtnText("Sign Out"): setBtnText("Sign In")
+                                }}>
+                                    {btnText}
+                            </button> */}
+                            {btnText}
+                         </Link> 
+                    </li>
                     <li><Link to="/cart" className='nav-link'><i className="fa fa-shopping-cart"></i>Cart</Link></li>
 
                 </ul>
