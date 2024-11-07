@@ -24,6 +24,7 @@ export const  DATA_RESTAURANTS=[
                                     "info": {
                                         "id": "700497",
                                         "name": "Pista House",
+                                        "promoted":true,
                                         "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/7/13/73b92404-8b15-4c70-b350-061a59a93942_700497.jpg",
                                         "locality": "Dilsukhnagar",
                                         "areaName": "Gaddiannaram",
@@ -102,6 +103,7 @@ export const  DATA_RESTAURANTS=[
                                         "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/18/7b423eb8-2bfc-4422-9767-7dbd143fb95e_860947.jpg",
                                         "locality": "Sagar Road",
                                         "areaName": "Champapet",
+                                        "promoted":true,
                                         "costForTwo": "₹400 for two",
                                         "cuisines": [
                                             "Burgers",
@@ -187,6 +189,7 @@ export const  DATA_RESTAURANTS=[
                                         "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/11/60497022-434e-4d21-bc0e-813fea770ae5_644865.JPG",
                                         "locality": "L B NAGAR Circle",
                                         "areaName": "Santoshnagar & Saidabad",
+                                        "promoted":true,
                                         "costForTwo": "₹350 for two",
                                         "cuisines": [
                                             "Burgers",
@@ -281,6 +284,7 @@ export const  DATA_RESTAURANTS=[
                                         "locality": "Circle-7 Charminar",
                                         "areaName": "Santosh nagar",
                                         "costForTwo": "₹400 for two",
+                                        "promoted":true,
                                         "cuisines": [
                                             "Burgers",
                                             "Fast Food",

@@ -7,6 +7,7 @@ import ShimmerUi from './ShimmerUi'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import withPromotionLabel from './withPromotionLabel';
 
 
 
@@ -45,15 +46,18 @@ function Body() {
       
         setShimmerEffect(false); //hide shimmer effect
 
-        const resData = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants? json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants:
-        json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants? json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants:
-        DATA_RESTAURANTS;
+         const resData = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants? json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants:
+         json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants? json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants:
+         DATA_RESTAURANTS;
         setRestaurants(resData);
         console.log( "resData",resData);
         setOriginalResturantsData(resData); //original restaurant's data
         setShimmerEffect(false);// Hide shimmer effect after fetching
     }
    //  return (restaurants.length==0? <ShimmerUi />:
+
+   // HOC => accepts RestaurantCard as input and returns enhanced RestaurantCard
+   const EnhancedRestaurantCard = withPromotionLabel(RestaurantCard)
 
     return (shimmerEffect? <ShimmerUi/>:
       <div className='body'>
@@ -162,8 +166,9 @@ function Body() {
                 restaurants && restaurants.map((restaurant, index) => {
                   return (
                   <Link to={"/restaurantmenu/" + restaurant.info.id}>
-                     <RestaurantCard
+                     <EnhancedRestaurantCard
                         key={index}
+                        promoted={restaurant.info.promotion}
                         cloudinaryId={restaurant.info.cloudinaryImageId} 
                         name={restaurant.info.name}
                         deliveryTime={restaurant.info.sla.slaString}
